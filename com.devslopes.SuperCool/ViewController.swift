@@ -10,6 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var Boomtime: UIImageView!
+    
+   // @IBOutlet weak var CoolLogo: UIButton!
+    
+    
+    @IBOutlet var bg: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,5 +29,13 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func notsocool(sender: AnyObject) {
+        
+        Boomtime.hidden = false
+      //  CoolLogo.hidden = false
+        
+        bg.hidden = false
+        
+    }
 }
 
